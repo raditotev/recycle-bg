@@ -12,11 +12,34 @@
  */
 
  // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import url(http://fonts.googleapis.com/css?family=Rubik:400,700,300&subset=latin,cyrillic);
+$font-family-sans-serif: "Rubik", "Helvetica", sans-serif;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.admin-dashboard-nav {
+  background-color: #fff;
+  border-right: 1px solid #2980b9;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.admin-nav-links li a {
+    color: #2980b9!important;
+    -webkit-transition: ease 0.5s;
+    -ms-transition: ease 0.5s;
+    transition: ease 0.5s;
+    &:hover {
+    color: #2c3e50!important;
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+    }
+  }
+
 .navbar-fixed-left {
-  width: 140px;
+  width: 200px;
   position: fixed;
   border-radius: 0;
   height: 100%;
@@ -24,7 +47,7 @@
 
 .navbar-fixed-left .navbar-nav > li {
   float: none;  /* Cancel default li float: left */
-  width: 139px;
+  width: 180px;
 }
 
 .navbar-fixed-left + .container {
