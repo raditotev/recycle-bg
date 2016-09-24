@@ -13,3 +13,8 @@
  *= require_tree ./application
  *= require_self
  */
+
+ // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,700,300&subset=latin,cyrillic);
