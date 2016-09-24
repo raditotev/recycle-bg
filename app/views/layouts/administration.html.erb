@@ -3,11 +3,20 @@
   <head>
     <title>Recycle</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'administration', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'administration', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <div class="navbar navbar-inverse navbar-fixed-left admin-dashboard-nav">
+    <a class="navbar-brand" href="#">Рециклирай</a>
+    <ul class="nav navbar-nav admin-nav-links">
+      <li class="admin-dashboard-user"></li>
+      <li><a href="#">Администратори</a></li>
+      <li><a href="#">Потребители</a></li>
+      <li><a href="#">Докладвани обяви</a></li>
+      <li><a href="#">Обяви</a></li>
+      <li><a href="#">Поддръжка</a></li>
+    </ul>
+  </div>
   <body>
     <%= yield %>
   </body>

@@ -23,5 +23,6 @@ module Recycle
     # -- all .rb files in that directory are automatically loaded.
     # config.i18n.default_locale = :"bg-BG"
     # config.i18n.default_locale = :"en-EN"
+
   end
 end
